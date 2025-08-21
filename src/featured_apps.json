@@ -1,0 +1,667 @@
+[
+  {
+    "id": "gnome_extensions",
+    "category": "Produtividade",
+    "name": "Gnome Extensions",
+    "icon": "⚙️",
+    "summary": "Gerenciador de extensões para personalizar o Gnome.",
+    "tags": [
+      "Personalização",
+      "Desktop",
+      "Gnome"
+    ],
+    "packageName": "com.mattjakeman.ExtensionManager",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "keep_presence",
+    "category": "Produtividade",
+    "name": "Keep Presence",
+    "icon": "👁️",
+    "summary": "Mantenha seu status online em aplicativos de mensagem.",
+    "tags": [
+      "Status",
+      "Online",
+      "Mensagens"
+    ],
+    "packageName": "keep-presence",
+    "manager": "snap",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "impression",
+    "category": "Produtividade",
+    "name": "Impression",
+    "icon": "💿",
+    "summary": "Gravador de ISOs para pendrive bootavel.",
+    "tags": [
+      "ISO",
+      "Boot",
+      "Gravação"
+    ],
+    "packageName": "io.gitlab.adhami3310.Impression",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "timeshift",
+    "category": "Produtividade",
+    "name": "Timeshift",
+    "icon": "🔄",
+    "summary": "Sistema de backup e restauração do sistema.",
+    "tags": [
+      "Backup",
+      "Sistema",
+      "Restauração"
+    ],
+    "packageName": "timeshift",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "gimp",
+    "category": "Escritório",
+    "name": "GIMP",
+    "icon": "🎨",
+    "summary": "Editor de imagens poderoso e gratuito.",
+    "tags": [
+      "Design",
+      "Edição",
+      "Imagens"
+    ],
+    "packageName": "org.gimp.GIMP",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "libreoffice",
+    "category": "Escritório",
+    "name": "LibreOffice",
+    "icon": "📄",
+    "summary": "Suite de escritório completa e compatível.",
+    "tags": [
+      "Produtividade",
+      "Documentos"
+    ],
+    "packageName": "libreoffice",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "onlyoffice",
+    "category": "Escritório",
+    "name": "OnlyOffice",
+    "icon": "📄",
+    "summary": "Suite de escritório completa e poderosa.",
+    "tags": [
+      "Produtividade",
+      "Documentos"
+    ],
+    "packageName": "org.onlyoffice.desktopeditors",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "inkscape",
+    "category": "Escritório",
+    "name": "Inkscape",
+    "icon": "✒️",
+    "summary": "Editor de gráficos vetoriais profissional.",
+    "tags": [
+      "Design",
+      "SVG",
+      "Vetores"
+    ],
+    "packageName": "inkscape",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "vlc",
+    "category": "Multimídia",
+    "name": "VLC",
+    "icon": "🎬",
+    "summary": "Reprodutor multimídia que roda tudo.",
+    "tags": [
+      "Mídia",
+      "Vídeo",
+      "Áudio"
+    ],
+    "packageName": "vlc",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "obs",
+    "category": "Multimídia",
+    "name": "OBS Studio",
+    "icon": "📺",
+    "summary": "Gravação e transmissão ao vivo.",
+    "tags": [
+      "Streaming",
+      "Vídeo"
+    ],
+    "packageName": "obs-studio",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "spotify",
+    "category": "Multimídia",
+    "name": "Spotify",
+    "icon": "🎵",
+    "summary": "Serviço de streaming de música e podcasts.",
+    "tags": [
+      "Música",
+      "Streaming",
+      "Áudio"
+    ],
+    "packageName": "com.spotify.Client",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "dbeaver",
+    "category": "Desenvolvimento",
+    "name": "DBeaver",
+    "icon": "🗄️",
+    "summary": "Gerenciador universal de banco de dados.",
+    "tags": [
+      "Banco de Dados",
+      "SQL"
+    ],
+    "packageName": "io.dbeaver.DBeaverCommunity",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "vscode",
+    "category": "Desenvolvimento",
+    "name": "VS Code",
+    "icon": "📝",
+    "summary": "Editor de código leve e poderoso da Microsoft.",
+    "tags": [
+      "Editor",
+      "Desenvolvimento",
+      "IDE"
+    ],
+    "packageName": "com.visualstudio.code",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "filezilla",
+    "category": "Desenvolvimento",
+    "name": "Filezilla",
+    "icon": "🌐",
+    "summary": "Cliente FTP multiplataforma para transferência de arquivos.",
+    "tags": [
+      "FTP",
+      "Transferência",
+      "Rede"
+    ],
+    "packageName": "filezilla",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "git",
+    "category": "Desenvolvimento",
+    "name": "Git",
+    "icon": "🔄",
+    "summary": "Sistema de controle de versão distribuído.",
+    "tags": [
+      "Versionamento",
+      "Colaboração"
+    ],
+    "packageName": "git",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "mariadb",
+    "category": "Desenvolvimento",
+    "name": "MariaDB",
+    "icon": "🎲",
+    "summary": "Sistema de gerenciamento de banco de dados relacional.",
+    "tags": [
+      "Banco de Dados",
+      "MySQL"
+    ],
+    "packageName": "mariadb-server",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "boxes",
+    "category": "Virtualização",
+    "name": "Gnome Boxes",
+    "icon": "📦",
+    "summary": "Gerenciador de máquinas virtuais simples e intuitivo.",
+    "tags": [
+      "Virtualização",
+      "VMs"
+    ],
+    "packageName": "gnome-boxes",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "virtualbox",
+    "category": "Virtualização",
+    "name": "VirtualBox",
+    "icon": "🖥️",
+    "summary": "Software de virtualização robusto e completo.",
+    "tags": [
+      "Virtualização",
+      "VMs"
+    ],
+    "packageName": "virtualbox",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "distroshelf",
+    "category": "Virtualização",
+    "name": "Distro Shelf",
+    "icon": "📚",
+    "summary": "Gerenciador de distribuições Linux em containers.",
+    "tags": [
+      "Virtualização",
+      "VMs"
+    ],
+    "packageName": "com.ranfdev.DistroShelf",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "chrome",
+    "category": "Internet",
+    "name": "Google Chrome",
+    "icon": "🌐",
+    "summary": "O navegador rápido e seguro do Google.",
+    "tags": [
+      "Navegador",
+      "Web",
+      "Internet"
+    ],
+    "packageName": "com.google.Chrome",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "vivaldi",
+    "category": "Internet",
+    "name": "Vivaldi",
+    "icon": "🌍",
+    "summary": "Navegador altamente personalizável.",
+    "tags": [
+      "Navegador",
+      "Web"
+
+    ],
+    "packageName": "com.vivaldi.Vivaldi",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "firefox",
+    "category": "Internet",
+    "name": "Mozilla Firefox",
+    "icon": "🦊",
+    "summary": "Navegador livre, rápido e focado em privacidade.",
+    "tags": [
+      "Web",
+      "Privacidade"
+    ],
+    "packageName": "org.mozilla.firefox",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "opera",
+    "category": "Internet",
+    "name": "Opera",
+    "icon": "🌐",
+    "summary": "Navegador com VPN integrada e recursos únicos.",
+    "tags": [
+      "Navegador",
+      "Web",
+      "VPN"
+    ],
+    "packageName": "com.opera.Opera",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "edge",
+    "category": "Internet",
+    "name": "Microsoft Edge",
+    "icon": "🌍",
+    "summary": "Navegador rápido baseado em Chromium da Microsoft.",
+    "tags": [
+      "Navegador",
+      "Web",
+      "Microsoft"
+    ],
+    "packageName": "com.microsoft.Edge",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "rustdesk",
+    "category": "Internet",
+    "name": "RustDesk",
+    "icon": "🖥️",
+    "summary": "Software de acesso remoto seguro e open source.",
+    "tags": [
+      "Remoto",
+      "Suporte",
+      "Rede"
+    ],
+    "packageName": "com.rustdesk.RustDesk",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "anydesk",
+    "category": "Internet",
+    "name": "AnyDesk",
+    "icon": "🔗",
+    "summary": "Software de acesso remoto rápido e seguro.",
+    "tags": [
+      "Remoto",
+      "Suporte",
+      "Rede"
+    ],
+    "packageName": "com.anydesk.Anydesk",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "discord",
+    "category": "Comunicação",
+    "name": "Discord",
+    "icon": "💭",
+    "summary": "Plataforma de comunicação por voz, vídeo e texto.",
+    "tags": [
+      "Chat",
+      "VoIP",
+      "Comunidades"
+    ],
+    "packageName": "discord",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "telegram",
+    "category": "Comunicação",
+    "name": "Telegram",
+    "icon": "✈️",
+    "summary": "Mensageiro rápido e seguro com foco em privacidade.",
+    "tags": [
+      "Chat",
+      "Mensagens"
+    ],
+    "packageName": "org.telegram.desktop",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "zapzap",
+    "category": "Comunicação",
+    "name": "ZapZap",
+    "icon": "💬",
+    "summary": "Cliente não oficial do WhatsApp para Linux.",
+    "tags": [
+      "Chat",
+      "Mensagens",
+      "WhatsApp"
+    ],
+    "packageName": "com.rtosta.zapzap",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "whatsie",
+    "category": "Comunicação",
+    "name": "Whastsie",
+    "icon": "💬",
+    "summary": "Cliente não oficial do WhatsApp para Linux.",
+    "tags": [
+      "Chat",
+      "Mensagens",
+      "WhatsApp"
+    ],
+    "packageName": "com.ktechpit.whatsie",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "steam",
+    "category": "Jogos",
+    "name": "Steam",
+    "icon": "🎮",
+    "summary": "Plataforma de distribuição de jogos da Valve.",
+    "tags": [
+      "Jogos",
+      "Gaming",
+      "Loja"
+    ],
+    "packageName": "com.valvesoftware.Steam",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "heroic",
+    "category": "Jogos",
+    "name": "Heroic",
+    "icon": "🎯",
+    "summary": "Cliente alternativo para Epic Games e GOG.",
+    "tags": [
+      "Jogos",
+      "Epic Games",
+      "GOG"
+    ],
+    "packageName": "com.heroicgameslauncher.hgl",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "Lutris",
+    "category": "Jogos",
+    "name": "Lutris",
+    "icon": "🎮",
+    "summary": "Gerenciador de jogos para Linux.",
+    "tags": [
+      "Jogos",
+      "Gaming",
+      "Emulação"
+    ],
+    "packageName": "net.lutris.Lutris",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "bottles",
+    "category": "Jogos",
+    "name": "Bottles",
+    "icon": "🍷",
+    "summary": "Gerenciador de prefixos Wine simplificado.",
+    "tags": [
+      "Compatibilidade",
+      "Windows"
+    ],
+    "packageName": "com.usebottles.bottles",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "portproton",
+    "category": "Jogos",
+    "name": "PortProton",
+    "icon": "🎮",
+    "summary": "Ferramenta de compatibilidade para jogos Windows.",
+    "tags": [
+      "Gaming",
+      "Compatibilidade"
+    ],
+    "packageName": "ru.linux_gaming.PortProton",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "protonplus",
+    "category": "Jogos",
+    "name": "ProtonPlus",
+    "icon": "🎮",
+    "summary": "Gerenciador de versões do Proton.",
+    "tags": [
+      "Proton",
+      "Gaming",
+      "Steam"
+    ],
+    "packageName": "com.vysp3r.ProtonPlus",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "antimicrox",
+    "category": "Jogos",
+    "name": "AntiMicroX",
+    "icon": "🎮",
+    "summary": "Configure controles para jogos e aplicativos.",
+    "tags": [
+      "Controles",
+      "Gamepad"
+    ],
+    "packageName": "io.github.antimicrox.antimicrox",
+    "manager": "flatpak",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "mangohud",
+    "category": "Jogos",
+    "name": "MangoHUD",
+    "icon": "📊",
+    "summary": "Monitor de desempenho para jogos no Linux.",
+    "tags": [
+      "Monitoramento",
+      "FPS"
+    ],
+    "packageName": "mangohud",
+    "manager": "apt",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "disable_ubuntu_snap",
+    "category": "Tweaks",
+    "name": "Desabilitar SNAPs",
+    "icon": "⚙️",
+    "summary": "Desabilitar SNAPs para melhorar o desempenho do sistema.",
+    "tags": [
+      "Sistema",
+      "SNAP"
+    ],
+    "script": "disable_ubuntu_snap.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "enable_ubuntu_snap",
+    "category": "Tweaks",
+    "name": "Habilitar SNAPs",
+    "icon": "⚙️",
+    "summary": "Habilitar pacotes SNAPs no sistema.",
+    "tags": [
+      "Sistema",
+      "SNAP"
+    ],
+    "script": "enable_ubuntu_snap.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "configure_flatpak",
+    "category": "Tweaks",
+    "name": "Habilitar Flatpaks",
+    "icon": "⚙️",
+    "summary": "Habilita o suporte a Flatpaks Gnome/KDE.",
+    "tags": [
+      "Sistema",
+      "Flatpak"
+    ],
+    "script": "configure_flatpak.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "install_docker",
+    "category": "Tweaks",
+    "name": "Instalar Docker",
+    "icon": "⚙️",
+    "summary": "Configura o sistema para usar o Docker.",
+    "tags": [
+      "Sistema",
+      "Docker"
+    ],
+    "script": "install_docker.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "toolbox",
+    "category": "Tweaks",
+    "name": "JetBrains Toolbox",
+    "icon": "💻",
+    "summary": "Ferramentas de desenvolvimento da JetBrains.",
+    "tags": [
+      "IDE",
+      "Desenvolvimento"
+    ],
+    "script": "jetbrains.sh",
+    "installed": false,
+    "installing": false
+  }
+]
+
+
