@@ -1,6 +1,9 @@
-# Tauri + Vue 3
+# Linux Tool Kit 
 
-This template should help get you started developing with Tauri + Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project aims to simplify some repetitive tasks when reinstalling an operating system.
+The project is developed using Tauri and Vuejs technologies. So far, the scripts have only been tested on Ubuntu 24.04, but theoretically, it can be used on any Debian-based distribution.
+More package managers will be added soon so it can be used on other platforms.
+
 
 ## Recommended IDE Setup
 
