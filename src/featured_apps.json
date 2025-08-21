@@ -265,21 +265,6 @@
     "installing": false
   },
   {
-    "id": "virtualbox",
-    "category": "Virtualização",
-    "name": "VirtualBox",
-    "icon": "🖥️",
-    "summary": "Software de virtualização robusto e completo.",
-    "tags": [
-      "Virtualização",
-      "VMs"
-    ],
-    "packageName": "virtualbox",
-    "manager": "apt",
-    "installed": false,
-    "installing": false
-  },
-  {
     "id": "distroshelf",
     "category": "Virtualização",
     "name": "Distro Shelf",
@@ -631,6 +616,20 @@
       "Flatpak"
     ],
     "script": "configure_flatpak.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "virtualbox",
+    "category": "Tweaks",
+    "name": "VirtualBox",
+    "icon": "🖥️",
+    "summary": "Software de virtualização robusto e completo.",
+    "tags": [
+      "Virtualização",
+      "VMs"
+    ],
+    "script": "install_virtualbox.sh",
     "installed": false,
     "installing": false
   },

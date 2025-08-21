@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+if ! command -v snap >/dev/null 2>&1; then
+  echo "Erro: O suporte ao Snap não está instalado ou não está no PATH." >&2
+  echo "Por favor, habilite os snaps e tente novamente." >&2
+  exit 1
+fi
+
 # Validação básica dos argumentos
 if [ -z "$1" ] || [ -z "$2" ]; then
   echo "Erro: Ação (install/remove) e nome do pacote são necessários."

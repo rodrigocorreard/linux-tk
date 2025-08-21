@@ -3,6 +3,13 @@
 # Este script gerencia pacotes Flatpak (instalação/remoção) usando pkexec
 # para elevação de privilégios.
 
+# Verifica se o comando 'flatpak' está disponível no sistema
+if ! command -v flatpak >/dev/null 2>&1; then
+  echo "Erro: O suporte ao Flatpak não está instalado." >&2
+  echo "Por favor, instale o Tweak Flatpak primeiro e tente novamente." >&2
+  exit 1
+fi
+
 # Verifica se os argumentos necessários foram fornecidos
 if [ "$#" -ne 2 ]; then
     echo "Uso: $0 <install|remove> <flatpak_id>"

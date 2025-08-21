@@ -1,34 +1,34 @@
 #!/bin/sh
-# Script para verificar se o ambiente de desktop é GNOME ou KDE Plasma.
 
-# O método mais padrão e confiável é inspecionar a variável XDG_CURRENT_DESKTOP.
-# Esta variável pode conter uma lista de valores separados por dois pontos (ex: "GNOME:GNOME-Classic"),
-# então verificamos se a string contém "gnome" ou "kde"/"plasma".
-
+# Pega a variável e converte para letras minúsculas para facilitar a verificação
 if [ -n "$XDG_CURRENT_DESKTOP" ]; then
-    # Converte a variável para minúsculas para garantir a correspondência
-    desktop_env=$(echo "$XDG_CURRENT_DESKTOP" | tr '[:upper:]' '[:lower:]')
-
-    case "$desktop_env" in
-        *gnome*)
-            echo "Ambiente de desktop detectado: GNOME"
-            apt install flatpak
-            apt install gnome-software-plugin-flatpak
-            flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-            echo 'É preciso reiniciar para aplicar as alterações.'
-            exit 0
-            ;;
-        *kde*|*plasma*)
-            # O ambiente KDE pode se identificar como 'kde' ou, mais recentemente, 'plasma'
-            echo "Ambiente de desktop detectado: KDE Plasma"
-            apt install kde-config-flatpak
-            echo 'É preciso reiniciar para aplicar as alterações.'
-            exit 0
-            ;;
-    esac
+  CURRENT_DESKTOP=$(echo "$XDG_CURRENT_DESKTOP" | tr '[:upper:]' '[:lower:]')
+else
+  echo "A variável XDG_CURRENT_DESKTOP não está definida. Não é possível detectar o ambiente." >&2
+  exit 1
 fi
 
-# Se nenhum dos métodos acima funcionou
-echo "Não foi possível determinar se o ambiente é GNOME ou KDE."
-exit 1
+# Usa 'case' com asteriscos para procurar por substrings
+case "$CURRENT_DESKTOP" in
+  *gnome*)
+    echo "Ambiente GNOME detectado."
+    apt install -y flatpak
+    apt install -y gnome-software-plugin-flatpak
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    echo 'É preciso reiniciar para aplicar as alterações.'
+    exit 0
+    ;;
+  *kde*|*plasma*)
+    echo "Ambiente KDE Plasma detectado."
+    apt install -y kde-config-flatpak
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    echo 'É preciso reiniciar para aplicar as alterações.'
+    exit 0
+    ;;
+  *)
+    echo "Não foi possível identificar o ambiente como GNOME ou KDE." >&2
+    echo "Valor encontrado: '$XDG_CURRENT_DESKTOP'"
+    exit 1
+    ;;
+esac
 
