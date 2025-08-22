@@ -5,6 +5,11 @@ The project is developed using Tauri and Vuejs technologies. So far, the scripts
 More package managers will be added soon so it can be used on other platforms.
 
 
+Dependencies
+
+If you are installing the deb package on a Plasma distribution, you must first run the command:
+sudo apt install libwebkit2gtk-4.1-0
+
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
