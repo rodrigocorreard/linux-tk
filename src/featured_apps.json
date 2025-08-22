@@ -146,7 +146,7 @@
     "category": "Multimídia",
     "name": "OBS Studio",
     "icon": "📺",
-    "summary": "Gravação e transmissão ao vivo.",
+    "summary": "Gravação e transmissão de conteúdo ao vivo.",
     "tags": [
       "Streaming",
       "Vídeo"
@@ -475,7 +475,7 @@
     "category": "Jogos",
     "name": "Lutris",
     "icon": "🎮",
-    "summary": "Gerenciador de jogos para Linux.",
+    "summary": "Gerenciador de biblioteca de jogos para Linux.",
     "tags": [
       "Jogos",
       "Gaming",
@@ -648,7 +648,7 @@
   },
   {
     "id": "vscode",
-    "category": "Desenvolvimento",
+    "category": "Tweaks",
     "name": "VS Code",
     "icon": "📝",
     "summary": "Editor de código leve e poderoso da Microsoft.",
