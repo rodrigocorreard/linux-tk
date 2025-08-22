@@ -80,5 +80,5 @@ fi
 echo "Limpando o arquivo de instalação..."
 rm "$DOWNLOAD_FILE"
 
-echo "O JetBrains Toolbox foi iniciado com sucesso."
+echo "O JetBrains Toolbox foi iniciado com sucesso em segundo plano."
 echo "Os arquivos foram extraídos em: $DOWNLOAD_DIR"

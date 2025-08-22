@@ -23,6 +23,17 @@ if grep -q -i "vendor_id.*AuthenticAMD" /proc/cpuinfo; then
   else
     echo "O módulo kvm_amd não está carregado."
   fi
+
+  # Adiciona o módulo à blacklist para impedir que seja carregado no boot
+  BLACKLIST_FILE="/etc/modprobe.d/blacklist-kvm_amd.conf"
+  if [ ! -f "$BLACKLIST_FILE" ] || ! grep -q -w "blacklist kvm_amd" "$BLACKLIST_FILE"; then
+    echo "Adicionando o módulo kvm_amd à blacklist..."
+    echo "# Desativado para evitar conflitos com o VirtualBox" >> "$BLACKLIST_FILE"
+    echo "blacklist kvm_amd" >> "$BLACKLIST_FILE"
+    echo "Módulo kvm_amd adicionado à blacklist em $BLACKLIST_FILE."
+  else
+    echo "O módulo kvm_amd já se encontra na blacklist."
+  fi
 fi
 
 # Atualiza a lista de pacotes

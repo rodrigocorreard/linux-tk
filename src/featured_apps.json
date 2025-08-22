@@ -187,22 +187,7 @@
     "installed": false,
     "installing": false
   },
-  {
-    "id": "vscode",
-    "category": "Desenvolvimento",
-    "name": "VS Code",
-    "icon": "📝",
-    "summary": "Editor de código leve e poderoso da Microsoft.",
-    "tags": [
-      "Editor",
-      "Desenvolvimento",
-      "IDE"
-    ],
-    "packageName": "com.visualstudio.code",
-    "manager": "flatpak",
-    "installed": false,
-    "installing": false
-  },
+
   {
     "id": "filezilla",
     "category": "Desenvolvimento",
@@ -401,8 +386,8 @@
       "VoIP",
       "Comunidades"
     ],
-    "packageName": "discord",
-    "manager": "apt",
+    "packageName": "com.discordapp.Discord",
+    "manager": "flatpak",
     "installed": false,
     "installing": false
   },
@@ -658,6 +643,21 @@
       "Desenvolvimento"
     ],
     "script": "jetbrains.sh",
+    "installed": false,
+    "installing": false
+  },
+  {
+    "id": "vscode",
+    "category": "Desenvolvimento",
+    "name": "VS Code",
+    "icon": "📝",
+    "summary": "Editor de código leve e poderoso da Microsoft.",
+    "tags": [
+      "Editor",
+      "Desenvolvimento",
+      "IDE"
+    ],
+    "script": "install_vscode.sh",
     "installed": false,
     "installing": false
   }
