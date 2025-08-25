@@ -10,6 +10,7 @@ if [ $status -eq 0 ]; then
   echo "O serviço 'snapd' está em operação (ativo)."
 else
   echo "O serviço 'snapd' NÃO está em operação (inativo)."
+  apt install -y snapd
   systemctl unmask snapd
   systemctl start snapd
   systemctl enable snapd

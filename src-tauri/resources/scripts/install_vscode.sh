@@ -68,14 +68,14 @@ echo "Download concluído com sucesso."
 
 echo "Instalando o pacote .deb..."
 # Usa apt-get para instalar o pacote .deb e tratar dependências.
-apt-get install -y "./$DOWNLOAD_FILE"
+DEBIAN_FRONTEND=noninteractive apt-get install -y "./$DOWNLOAD_FILE"
 
 # Verifica se a instalação foi bem-sucedida.
 if [ $? -ne 0 ]; then
     echo "[erro] A instalação falhou. Tentando corrigir dependências..."
-    apt-get --fix-broken install -y
+    DEBIAN_FRONTEND=noninteractive apt-get --fix-broken install -y
     # Tenta instalar novamente.
-    apt-get install -y "./$DOWNLOAD_FILE"
+    DEBIAN_FRONTEND=noninteractive apt-get install -y "./$DOWNLOAD_FILE"
     if [ $? -ne 0 ]; then
       echo "[erro] A instalação falhou novamente. O arquivo .deb está em $DOWNLOAD_DIR."
       exit 1
