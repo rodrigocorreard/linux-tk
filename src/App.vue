@@ -23,7 +23,7 @@ const externalLinks = ref([
   },
   {
     name: 'Apoie o Projeto',
-    url: 'https://github.com/sponsors/lucas-r-santos',
+    url: 'https://www.paypal.com/donate/?business=H5BA5B3PHZRJ6&no_recurring=0&item_name=Estamos+em+desenvolvimento.+Apoie+o+projeto+para+que+mais+funcionalidades+sejam+adicionadas.+Obrigado%21&currency_code=BRL',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>'
   }
 
@@ -77,7 +77,7 @@ function loadFeaturedApps() {
   }
 }
 
-async function executeBashStreaming(scriptName) {
+async function executeBashStreaming(app) {
   stdoutText.value = "";
   stderrText.value = "";
 
@@ -85,16 +85,29 @@ async function executeBashStreaming(scriptName) {
   isRunning.value = true;
 
   try {
+    const scriptName = app.script;
     const baseDir = await resourceDir();
     const scriptPath = await join(baseDir, 'resources', 'scripts', scriptName);
 
     // Apenas um log para sabermos o que está sendo executado
     console.log(`Tentando executar: sh "${scriptPath}"`);
 
-    const cmd = Command.create('run-sh', [
-      '-c',
-      `pkexec sh "${scriptPath}"`
-    ]);
+    // Lógica condicional para usar pkexec
+    let commandToRun;
+    if (app.needs_root === false) {
+      // Executa o script diretamente como o usuário atual
+      console.log("Executando sem pkexec (privilégios de usuário).");
+      commandToRun = `sh "${scriptPath}"`;
+    } else {
+      // Comportamento padrão: usa pkexec para privilégios de root
+      console.log("Executando com pkexec (privilégios de root).");
+      commandToRun = `pkexec sh "${scriptPath}"`;
+    }
+
+    const cmd = Command.create('run-sh', ['-c', commandToRun]);
+
+
+//    const cmd = Command.create('run-sh', ['-c',`pkexec sh "${scriptPath}"`]);
 
     const decoder = new TextDecoder('utf-8');
 
@@ -389,7 +402,7 @@ async function updatePackageStatuses() {
                       v-if="app.category === 'Tweaks' && app.script"
                       class="px-3 py-1.5 rounded-lg border border-teal-500 bg-teal-600 hover:bg-teal-500 transition disabled:opacity-60 disabled:cursor-not-allowed text-sm"
                       :disabled="isRunning"
-                      @click="executeBashStreaming(app.script)"
+                      @click="executeBashStreaming(app)"
                   >
                     <span v-if="isRunning">Aguarde...</span>
                     <span v-else>Executar</span>
@@ -483,7 +496,7 @@ async function updatePackageStatuses() {
                     v-if="app.category === 'Tweaks' && app.script"
                     class="px-3 py-1.5 rounded-lg border border-teal-500 bg-teal-600 hover:bg-teal-500 transition disabled:opacity-60 disabled:cursor-not-allowed text-sm"
                     :disabled="isRunning"
-                    @click="executeBashStreaming(app.script)"
+                    @click="executeBashStreaming(app)"
                 >
                   <span v-if="isRunning">Aguarde...</span>
                   <span v-else>Executar</span>

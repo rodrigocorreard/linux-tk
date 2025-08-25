@@ -235,6 +235,21 @@
     "installing": false
   },
   {
+    "id": "docker",
+    "category": "Desenvolvimento",
+    "name": "Docker",
+    "icon": "🐳",
+    "summary": "Configura o sistema para usar o Docker.",
+    "tags": [
+      "Sistema",
+      "Docker"
+    ],
+    "packageName": "docker",
+    "manager": "snap",
+    "installed": false,
+    "installing": false
+  },
+  {
     "id": "boxes",
     "category": "Virtualização",
     "name": "Gnome Boxes",
@@ -250,17 +265,17 @@
     "installing": false
   },
   {
-    "id": "distroshelf",
+    "id": "virtmanager",
     "category": "Virtualização",
-    "name": "Distro Shelf",
-    "icon": "📚",
-    "summary": "Gerenciador de distribuições Linux em containers.",
+    "name": "Virt Manager",
+    "icon": "📦",
+    "summary": "Aplicativo desktop para gerenciar máquinas virtuais KVM.",
     "tags": [
       "Virtualização",
       "VMs"
     ],
-    "packageName": "com.ranfdev.DistroShelf",
-    "manager": "flatpak",
+    "packageName": "virt-manager",
+    "manager": "apt",
     "installed": false,
     "installing": false
   },
@@ -619,20 +634,6 @@
     "installing": false
   },
   {
-    "id": "install_docker",
-    "category": "Tweaks",
-    "name": "Instalar Docker",
-    "icon": "⚙️",
-    "summary": "Configura o sistema para usar o Docker.",
-    "tags": [
-      "Sistema",
-      "Docker"
-    ],
-    "script": "install_docker.sh",
-    "installed": false,
-    "installing": false
-  },
-  {
     "id": "toolbox",
     "category": "Tweaks",
     "name": "JetBrains Toolbox",
@@ -660,7 +661,20 @@
     "script": "install_vscode.sh",
     "installed": false,
     "installing": false
+  },
+  {
+    "id": "nvm-installer",
+    "category": "Tweaks",
+    "name": "Instalador do NVM",
+    "icon": "📦",
+    "summary": "Gerencia e instala múltiplas versões do Node.js.",
+    "tags": ["dev", "node", "javascript"],
+    "script": "install_nvm.sh",
+    "needs_root": false,
+    "installed": false,
+    "installing": false
   }
+
 ]
 
 
