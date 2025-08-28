@@ -673,8 +673,22 @@
     "needs_root": false,
     "installed": false,
     "installing": false
+  },
+  {
+    "id": "davinci-resolve",
+    "category": "Tweaks",
+    "name": "Davinci Resolve 20.1",
+    "icon": "🎬",
+    "summary": "Editor de vídeo profissional com recursos avançados.",
+    "tags": [
+      "Vídeo",
+      "Edição"
+    ],
+    "script": "install_resolve.sh",
+    "needs_root": false,
+    "installed": false,
+    "installing": false
   }
-
 ]
 
 
